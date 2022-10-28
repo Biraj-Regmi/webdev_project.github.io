@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scheduling Algorithms</title>
+    <link rel="stylesheet" href="csspro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body class="body1">
+    <div id="container">
+        <div id="header">
+        <div id="brand">
+            <h1><a href="#">CPU scheduling Simulator</a></h1>
+     </div>
+     <div class="clear">
+     
+     </div>
+     </div>
+     <div id="menu">
+     <ul>
+        <li><a href="#" class="active">Home</a>
+        </li> <li><a href="#fcfs">FCFS</a></li>
+     <li><a href="#psnp">Priority Scheduling(Non-Premptive)</a></li>
+     <li><a href="#psp">Priority Scheduling(Premptive)</a></li>
+     </ul>
+     </div>
+     <div id="introduction">
+     <h3>What is CPU Scheduling</h3>
+     <p> CPU Scheduling is a process that allows one process to use the CPU while another process is delayed (in standby) due to unavailability of any resources such as I / O etc, thus making full use of the CPU. The purpose of CPU Scheduling is to make the system more efficient, faster, and fairer.</p>
+     </div>
+     <div id="leftsidebar" class="sidebar">
+       <div class="images11"></div>
+     <h3>Images related to CPU Scheduling:</h3>
+     <img src="/project2/Screenshot_2.png" alt="Images" width="auto" height="250px">
+     </div>
+     <div id="rightsidebar" class="sidebar">
+     <h3>What is the need for CPU scheduling algorithm?</h3>
+     <p id="text1">
+        CPU scheduling is the process of deciding which process will own the CPU to use while another process is suspended. The main function of the CPU scheduling is to ensure that whenever the CPU remains idle, the OS has at least selected one of the processes available in the ready-to-use line.
+        In Multiprogramming, if the long-term scheduler selects multiple I / O binding processes then most of the time, the CPU remains an idle. The function of an effective program is to improve resource utilization.
+        If most operating systems change their status from performance to waiting then there may always be a chance of failure in the system. So in order to minimize this excess, the OS needs to schedule tasks in order to make full use of the CPU and avoid the possibility of deadlock.</p>
+    
+     </div>
+    
+     <div class="clear"></div>
+     <div class="fulmid">
+       <h1 class="h1al" id="fcfs">First Come First Serve Scheduling</h1>
+       <p id="p1al">
+        In the "First come first serve" scheduling algorithm, as the name suggests, the process which arrives first, gets executed first, or we can say that the process which requests the CPU first, gets the CPU allocated first.
+
+First Come First Serve, is just like FIFO(First in First out) Queue data structure, where the data element which is added to the queue first, is the one who leaves the queue first.
+This is used in Batch Systems.
+It's easy to understand and implement programmatically, using a Queue data structure, where a new process enters through the tail of the queue, and the scheduler selects process from the head of the queue.
+A perfect real life example of FCFS scheduling is buying tickets at ticket counter.<div>  
+            
+          </div>
+          
+     </div>
+     <div class="fulmid">
+      <h1 class="h1al" id="psnp" >Premptive Scheduling</h1>
+      <p id="p1al">1. Preemptive Scheduling: 
+        Preemptive scheduling is used when a process switches from running state to ready state or from the waiting state to ready state. The resources (mainly CPU cycles) are allocated to the process for a limited amount of time and then taken away, and the process is again placed back in the ready queue if that process still has CPU burst time remaining. That process stays in the ready queue till it gets its next chance to execute. 
+        Algorithms based on preemptive scheduling are: Round Robin (RR),Shortest Remaining Time First (SRTF), Priority (preemptive version), etc. 
+        
+      </p></div>
+      <div class="fulmid">
+        <h1 class="h1al" id="psp">Non-Premptive Scheduling</h1>
+        <p id="p1al">Non-Preemptive Scheduling: 
+          Non-preemptive Scheduling is used when a process terminates, or a process switches from running to the waiting state. In this scheduling, once the resources (CPU cycles) are allocated to a process, the process holds the CPU till it gets terminated or reaches a waiting state. In the case of non-preemptive scheduling does not interrupt a process running CPU in the middle of the execution. Instead, it waits till the process completes its CPU burst time, and then it can allocate the CPU to another process. 
+          
+          Algorithms based on non-preemptive scheduling are: Shortest Job First (SJF basically non preemptive) and Priority (non preemptive version), etc.
+           </div>
+           <div class="fulmid">
+            <button id="j"> <a href="/project2/index1.html" class="ankrbtn">CPU Scheduling Calculator</a></button>
+            <p id="p1al">Click here for the calculator</p>
+             </div>
+  <div class="ftr">
+  <footer class="footer">
+     <div>
+     <p>Biraj Regmi &copy;12009889</p>
+     </div>
+     </footer>
+     </div>
+    </div>
+
+</body>
+
+</html>

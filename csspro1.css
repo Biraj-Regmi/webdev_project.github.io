@@ -1,0 +1,341 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    font-family: Geneva, Verdana, sans-serif;
+}
+.add-btn{
+    background-color: #0e11c5; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .remove-btn{
+    background-color: #f44336; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .add-process-btn{
+    background-color: #0e11c5; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .remove-process-btn{
+    background-color: #f44336; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+  }
+  #calculate{
+    background-color: #0e11c5; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+  }
+  #reset{
+    background-color: #f44336; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+  }
+  #context-switch-div{
+    display: none;
+  }
+  form[id="algorithms-form"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #AB79D6;
+    color: white;
+  }
+  select {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+  }
+  .ftr{
+    text-align: center;
+    font-style: italic;
+  }
+#container{
+    margin-top: 200px;
+    width: 1200px;
+    border: 2px solid black;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 12px;
+    padding: 5px;
+    background-color: #cec9c9;
+}
+
+body {
+    margin: 10px 20px;
+     background-color: rgb(39,39,44);
+    
+}
+
+.instructions {
+    font-size: 14px;
+    margin: 10px 20px;
+}
+
+
+#h11 {
+    font-size: 26px;
+    text-align: center;
+    
+}
+
+
+table,th,td {
+    border-collapse: collapse;
+    text-align: center;
+    border: 5px solid white;
+}
+
+th{
+    background-color: #04AA6D;
+    color: white;
+}
+
+td {
+    padding: 0 2px;
+}
+
+th, td {
+    background-color: #5be91a;
+    padding: 10px;
+  }
+
+table input {
+    text-align: center;
+    border: none;
+    width: 100px;
+}
+
+.process-btn {
+    height: 5px;
+}
+
+.process-btn button {
+    height: 20px;
+    width: 20px;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    font-weight: bolder; 
+}
+
+.hide {
+    display: none;
+}
+
+button {
+    padding: 5px;
+}
+
+.schedule-table-process,
+.schedule-table-process td {
+    border: 1px solid black;
+}
+
+.schedule-table-process {
+    margin-left: 6px;
+}
+
+.schedule-table-time,
+.schedule-table-time td {
+    text-align: left;
+    border: 1px solid white;
+}
+
+#algorithm-chart-div {
+    width: 80%;
+    height: 50%;
+}
+
+
+#gantt-chart {
+    height: 250px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+#timeline-chart {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 250px;
+}
+
+#output {
+    margin-top: 20px;
+}
+
+#priority-toggle-btn {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0 0;
+    width: 60px;
+    display: none;
+}
+
+.preferences {
+    list-style: none;
+    
+}
+
+thead {
+    font-weight: bold;
+}
+
+#time-log-table-div {
+    margin-top: 10vh;
+    position: relative;
+}
+
+.time-log-table {
+    width: 10%;
+    position: absolute;
+}
+.main-table{
+    width: 1200px;
+    
+}
+#remain-table {
+    left: 7.5%;
+}
+
+#ready-table {
+    left: 32.5%;
+}
+
+#running-table {
+    right: 32.5%;
+}
+
+#block-table {
+    left: 45%;
+    top: 8vw;
+}
+
+#terminate-table {
+    right: 7.5%;
+}
+
+.arrow {
+    position: absolute;
+    font-size: 100px;
+}
+
+#remain-ready {
+    left: 20.5%;
+    top: -62px;
+}
+
+#ready-running {
+    transform: rotate(180deg);
+    left: 47%;
+    top: -15px;
+    font-size: 80px;
+}
+
+#running-ready {
+    left: 47%;
+    top: -60px;
+    font-size: 80px;
+}
+
+#running-terminate {
+    right: 20.5%;
+    top: -62px;
+}
+
+#running-block {
+    transform: rotate(135deg);
+    left: 52%;
+    top: 20px;
+}
+
+#block-ready {
+    transform: rotate(225deg);
+    left: 40%;
+    top: 20px;
+}
+.whole{
+    margin-left: a;
+}
+
+.custom-select {
+    position: relative;
+    font-family: Arial;
+  }
+  
+  .custom-select select {
+    display: none; 
+  }
+  
+  .select-selected {
+    background-color: DodgerBlue;
+  }
+  
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+  }
+  
+  .select-items {
+    position: absolute;
+    background-color: DodgerBlue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+ 
